@@ -2,7 +2,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This project is a demonstration of a lightweight React/Redux application is intended to connect to a .NET Core API that searches for malicious IP addresses.
+This project is a demonstration of a lightweight .NET Core API that allows for the search of IP data based on two data feeds:
+<ul>
+    <li>https://www.binarydefense.com/banlist.txt</li>
+    <li>ipinfo.io for Geo spacial information based off an IP address</li>
+</ul>
 
 # Goals of Projects
 <ol>
@@ -30,6 +34,11 @@ This project is a demonstration of a lightweight React/Redux application is inte
     <li><strong>Demonstrate CI Pipeline of projects using Travis</strong></li>
 </ol>
 
+# Prerequisites
+<ul>
+    <li>Visual Studio must be installed (application was developed in Visual Studio 2019)</li>
+</ul>
+
 # How to Run
 
 <ul>
@@ -38,17 +47,27 @@ This project is a demonstration of a lightweight React/Redux application is inte
         <li>https://github.com/WiNTeR270/security-demo-.net-core-api</li>
     </ul>
     </li>
-    <li>Run the .NET Core API application and determine the <strong>localhost:port</strong> in use for the API
+    <li>Sign up and configure the ipinfo.io API key
         <ul>
-            <li>Update src/actions/index.js</li>
+            <li>https://ipinfo.io/signup</li>
+            <li>Update the <b>IP_GEO_LOOKUP_API_KEY</b> variable in (https://github.com/WiNTeR270/security-demo-.net-core-api/blob/master/API/Controllers/IpAddressController.cs#L22) to reflect the API key</li>
         </ul>
     </li>
-    <li>Set the IP_SERVICE_URL variable to reflect the .NET Core API <strong>localhost:port</strong> value</li>
-    <li>Run the following commands once this git repository is checked out
+    <li>Open up a command line and run the following commands
         <ul>
-            <li>npm install</li>
-            <li>npm start</li>
+            <li>cd into the root API project folder</li>
+            <li>run <b>dotnet build</b></li>
+            <li>run <b>dotnet API/bin/Release/netcoreapp2.0/API.dll</b></li>
+            <li>find the port in use line <b>"Now listening on: http://localhost:PORT_NUM'</b>.</li>
+            <li>Verify the API is running by opening a browser and entering <b>http://localhost:PORT_NUMBER/api/maliciousIp/22.22.22.22</b>
+            </li>
         </ul>
     </li>
-    <li>Open up a web browser under <strong>localhost:3000</strong></li>
+    
+            <li>The API port number will need to reflected in the react-redux UI application in order for the UI to connect to the API layer</li>
+    <li>Download, setup, and follow instructions for the UI Application here: 
+        <ul>
+            <li>https://github.com/WiNTeR270/security-demo-react-redux</li>
+        </ul>
+    </li>
 </ul>
