@@ -8,6 +8,12 @@ This project is a demonstration of a lightweight .NET Core API that allows for t
     <li>ipinfo.io for Geo spacial information based off an IP address</li>
 </ul>
 
+# Associated Projects
+<ul>
+    <li>API Service: https://github.com/WiNTeR270/security-demo-.net-core-api</li>
+    <li>Web Application: https://github.com/WiNTeR270/security-demo-react-redux </li>
+</ul>
+
 # Goals of Projects
 <ol>
     <li><strong>Create a Simple React/Redux Application</strong>
