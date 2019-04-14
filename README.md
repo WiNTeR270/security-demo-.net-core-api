@@ -59,12 +59,11 @@ This project is a demonstration of a lightweight .NET Core API that allows for t
             <li>run <b>dotnet build</b></li>
             <li>run <b>dotnet API/bin/Release/netcoreapp2.0/API.dll</b></li>
             <li>find the port in use line <b>"Now listening on: http://localhost:PORT_NUM'</b>.</li>
-            <li>Verify the API is running by opening a browser and entering <b>http://localhost:PORT_NUMBER/api/maliciousIp/22.22.22.22</b>
+            <li>Verify the API is running by opening a browser and entering <b>http://localhost:PORT_NUMBER/api/maliciousIp/22.22.22.22</b> This should give you JSON result data
             </li>
         </ul>
     </li>
-    
-            <li>The API port number will need to reflected in the react-redux UI application in order for the UI to connect to the API layer</li>
+    <li>The API port number will need to reflected in the react-redux UI application in order for the UI to connect to the API layer</li>
     <li>Download, setup, and follow instructions for the UI Application here: 
         <ul>
             <li>https://github.com/WiNTeR270/security-demo-react-redux</li>
