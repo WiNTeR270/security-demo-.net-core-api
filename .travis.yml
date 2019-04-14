@@ -1,0 +1,7 @@
+language: csharp
+solution: API.sln
+mono: none
+dotnet: 2.1.602
+script:
+ - dotnet build
+ - dotnet test

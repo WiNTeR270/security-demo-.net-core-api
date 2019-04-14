@@ -22,7 +22,7 @@ namespace API.Controllers
         private static readonly string IP_GEO_LOOKUP_API_KEY = null;
         private readonly List<String> BadIpAddresses;
 
-        public IpAddressController()
+        public IpAddressController() 
         {
             //  TODO: Make this smarter with error recovery in case data feed is down
             HttpWebRequest request = WebRequest.Create(BAD_IP_ADDRESS_FEED_URL) as HttpWebRequest;
@@ -71,8 +71,8 @@ namespace API.Controllers
             {
                 Console.WriteLine("Failed to retrieve IP address details");
                 Console.WriteLine(e.ToString());
-                return null;
             }
+            return null;
         }
     }
 }
