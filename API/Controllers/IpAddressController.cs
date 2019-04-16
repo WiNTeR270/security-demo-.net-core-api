@@ -48,7 +48,7 @@ namespace API.Controllers
         }
 
         //  GET: /maliciousIp/:address
-        [HttpGet("maliciousIp/{address}")]
+        [HttpGet("ipAddress/{address}")]
         public IpAddress Get(string address)
         {
             //  TODO: Improve error handling / source address is inaccessible
