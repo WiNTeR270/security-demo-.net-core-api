@@ -1,6 +1,6 @@
 # React/Redux Malicious IP Search
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.com/WiNTeR270/security-demo-.net-core-api.svg?branch=master)](https://travis-ci.com/WiNTeR270/security-demo-.net-core-api)
 
 This project is a demonstration of a lightweight .NET Core API that allows for the search of IP data based on two data feeds:
 <ul>
