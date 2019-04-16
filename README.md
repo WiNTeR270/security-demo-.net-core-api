@@ -10,7 +10,13 @@ This project is a demonstration of a lightweight .NET Core API that allows for t
 
 # Associated Projects
 <ul>
-    <li>API Service: https://github.com/WiNTeR270/security-demo-.net-core-api</li>
+    <li>
+        Available API Services:
+        <ul>
+            <li>Java Spring: https://github.com/WiNTeR270/security-demo-java-api</li>
+            <li>C# .NET Core: https://github.com/WiNTeR270/security-demo-.net-core-api</li>
+        </ul>
+    </li>
     <li>Web Application: https://github.com/WiNTeR270/security-demo-react-redux </li>
 </ul>
 
@@ -27,6 +33,15 @@ This project is a demonstration of a lightweight .NET Core API that allows for t
         <li>Demonstrate Redux Actions</li>
         <li>Demonstrate various React components</li>
     </ul>
+    </li>
+    <li><strong>Create a Simple Java Spring API Service Layer</strong>
+    <ul>
+        <li>Start with an empty Java Springboot project</li>
+        <li>Provide an API for determing if an IP is in a known list (malicious) and retrieve Geo data for IP address</li>
+        <li>Integrate Service layer with another external API (ipinfo.io) and converting JSON results</li>
+        <li>Integrate Service layer with parsing data from an external URL (binarydefense) and converting raw text results</li>
+        <li>Simple unit test exercising API Controller that avoids having to run the full application to test against</li>
+        </ul>
     </li>
     <li><strong>Create a Simple .NET Core API Service Layer</strong>
     <ul>
